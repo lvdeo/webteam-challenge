@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Common button styles */
+.btn-primary {
+  @apply w-full sm:w-auto rounded-md bg-zinc-900 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-zinc-800 active:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200 touch-manipulation;
+}
+
+.btn-secondary {
+  @apply w-full sm:w-auto rounded-md bg-zinc-200 px-4 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-300 active:bg-zinc-400 dark:bg-zinc-800 dark:text-zinc-50 dark:hover:bg-zinc-700 touch-manipulation;
+}
+
+.btn-small {
+  @apply rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800 active:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200 touch-manipulation;
+}
+
+.btn-pagination-active {
+  @apply min-w-[40px] rounded-md px-3 py-2 text-sm font-medium transition-colors touch-manipulation bg-zinc-900 text-white dark:bg-zinc-50 dark:text-zinc-900 cursor-default;
+}
+
+.btn-pagination-inactive {
+  @apply min-w-[40px] rounded-md px-3 py-2 text-sm font-medium transition-colors touch-manipulation bg-zinc-100 text-zinc-900 hover:bg-zinc-200 active:bg-zinc-300 dark:bg-zinc-800 dark:text-zinc-50 dark:hover:bg-zinc-700;
+}
+
+/* Common card styles */
+.card {
+  @apply rounded-lg bg-white shadow-lg dark:bg-zinc-800;
+}
+
+.card-interactive {
+  @apply rounded-lg bg-white shadow-lg dark:bg-zinc-800 overflow-hidden transition-all hover:shadow-xl cursor-pointer select-none;
+}
+
+/* Common input styles */
+.input {
+  @apply w-full rounded-md border border-zinc-300 bg-white px-4 py-2.5 sm:py-2 text-base sm:text-sm text-zinc-900 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-500/20 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-50 touch-manipulation;
+}
+
+/* Common layout styles */
+.page-container {
+  @apply min-h-screen bg-gradient-to-br from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-zinc-900;
+}
+
+.content-wrapper {
+  @apply mx-auto max-w-7xl space-y-8 md:space-y-12;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  @apply mx-auto h-12 w-12 animate-spin rounded-full border-4 border-zinc-300 border-t-zinc-900 dark:border-zinc-700 dark:border-t-zinc-50;
+}
+
+/* Text styles */
+.text-heading {
+  @apply text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl md:text-5xl;
+}
+
+.text-subheading {
+  @apply text-2xl font-bold text-zinc-900 dark:text-zinc-50 sm:text-3xl;
+}
+
+.text-label {
+  @apply text-xs font-medium text-zinc-500 dark:text-zinc-400;
+}
+
+.text-secondary {
+  @apply text-sm text-zinc-600 dark:text-zinc-400;
+}
+
+/* Status badges */
+.badge-alive {
+  @apply rounded-full px-3 py-1 text-xs font-bold bg-green-500 text-white;
+}
+
+.badge-dead {
+  @apply rounded-full px-3 py-1 text-xs font-bold bg-red-500 text-white;
+}
+
+.badge-unknown {
+  @apply rounded-full px-3 py-1 text-xs font-bold bg-gray-500 text-white;
+}
+
+/* Modal */
+.modal-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm;
+}
+
+.modal-content {
+  @apply w-full max-w-md rounded-lg bg-white shadow-2xl dark:bg-zinc-900;
+}
+
+/* Detail section */
+.detail-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 rounded-lg bg-zinc-50 p-3 sm:p-4 dark:bg-zinc-800;
+}
